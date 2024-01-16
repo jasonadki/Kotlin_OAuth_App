@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeFragment">
+
+
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.oauth_example_app.ui.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_gitHubLoginFragment"
+            app:destination="@id/gitHubLoginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_stackoverflowLoginFragment"
+            app:destination="@id/stackoverflowLoginFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gitHubLoginFragment"
+        android:name="com.example.oauth_example_app.ui.home.GitHubLoginFragment"
+        android:label="GitHub Login" />
+
+    <fragment
+        android:id="@+id/stackoverflowLoginFragment"
+        android:name="com.example.oauth_example_app.ui.home.StackoverflowLoginFragment"
+        android:label="Stackoverflow Login" />
+
+    <fragment
+        android:id="@+id/githubProfileDetailsFragment"
+        android:name="com.example.oauth_example_app.ui.home.GithubProfileDetailsFragment"
+        android:label="Success Page" />
+
+    <fragment
+        android:id="@+id/stackoverflowProfileDetailsFragment"
+        android:name="com.example.oauth_example_app.ui.home.StackoverflowProfileDetailsFragment"
+        android:label="Success Page" />
+
+
+</navigation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_list">
+        <item>Car</item>
+        <item>Truck</item>
+        <item>Bike</item>
+    </string-array>
+
+    <string-array name="trip_numbers">
+        <item>1</item>
+        <item>2</item>
+        <!-- Add items up to 50 -->
+        <item>50</item>
+    </string-array>
+</resources>
